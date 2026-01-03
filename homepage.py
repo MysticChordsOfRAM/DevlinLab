@@ -72,8 +72,8 @@ SERVICES = [
      "color": '#3e6674'},
 
     {"name": 'Cosmo The Budget Bot',
-     "url": shh.bb_link,
-     "home": shh.bb_ip,
+     "url": shh.bot_link,
+     "home": shh.bot_ip,
      "desc": 'A Twilio app that I use for on-the-go data entry',
      "color": '#1b830a'},
 
