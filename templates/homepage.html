@@ -1,0 +1,62 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DevlinLab Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+  <body>
+
+    <div class="banner">
+        <h1>BEHOLD!</h1>
+        <p>The DevlinLab</p>
+    </div>
+
+    <div class="grid-container">
+            
+        {% for net in subnets %}
+        <div class="col">
+            <div class="service-card" style="--theme-color: {{ net.color }};">
+                <h3>{{ net.name }}</h3>
+                <p class="dtls">{{ net.IP }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="grid-container">
+            
+        {% for device in devices %}
+        <div class="col">
+            <div class="service-card" style="--theme-color: {{ device.color }};">
+                <h3>{{ device.name }}</h3>
+                <p class="dtls">{{ device.IP }}</p>
+                <p>{{ device.build }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="grid-container">
+            
+        {% for service in services %}
+        <div class="col">
+            <div class="service-card" style="--theme-color: {{ service.color }};">
+                <h3>{{ service.name }}</h3>
+                <p class="dtls">{{ service.home }}</p>
+                <p>{{ service.desc }}</p>
+                <a href="{{ service.url }}" class="btn">Go to {{ service.name }}</a>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+  </body>
+</html>
