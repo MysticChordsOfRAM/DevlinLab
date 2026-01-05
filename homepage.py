@@ -123,7 +123,19 @@ SERVICES = [
      "url": shh.bb_link,
      "home": shh.bb_ip,
      "desc": 'Barcode Scanner Advanced Mode',
-     "color": '#d67334'}
+     "color": '#d67334'},
+
+     {"name": 'My Resume',
+     "url": shh.res_link,
+     "home": shh.res_ip,
+     "desc": 'My Digital Resume - UNDER CONSTRUCTION',
+     "color": '#1b830a'},
+
+    {"name": 'Personal Website',
+     "url": shh.mcor_link,
+     "home": shh.mcor_ip,
+     "desc": 'My personal website, still under construction',
+     "color": '#1b830a'}
 
 ]
 
