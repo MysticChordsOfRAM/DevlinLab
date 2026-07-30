@@ -16,7 +16,7 @@ SUBNETS = [
     {"name": 'Admin Network',
      "IP": shh.admin_ip,
      "color": admin_color},
-    
+
     {"name": 'Data Warehouse',
      "IP": shh.dw_ip,
      "color": echo_color},
@@ -70,7 +70,27 @@ DEVICES = [
      "IP": shh.lomez_ip,
      "build": 'Raspberry Pi 5',
      "color": lomez_color},
-    
+
+    {"name": 'HUMPHREY',
+     "IP": shh.humphrey_ip,
+     "build": 'Lenovo X1 Carbon Gen13',
+     "color": lomez_color},
+
+    {"name": 'Pixel 8A',
+     "IP": shh.phone_ip,
+     "build": 'Pixel 8A',
+     "color": lomez_color},
+
+    {"name": 'Pixel Tablet',
+     "IP": shh.tablet_ip,
+     "build": 'Pixel Tablet',
+     "color": lomez_color},
+
+    {"name": 'BridgeViewscreen',
+     "IP": shh.tv_ip,
+     "build": 'Samsung 65-inch S90C',
+     "color": bobcobb_color},
+
     {"name": "BOBCOBB",
      "IP": shh.bob_ip,
      "build": 'Raspberry Pi Zero 2 W',
@@ -134,6 +154,18 @@ SERVICES = [
      "desc": 'Remote On In!',
      "color": echo_color},
 
+    {"name": 'RStudio Server',
+     "url": shh.r_link,
+     "home": shh.r_ip,
+     "desc": 'Run Code on the Server',
+     "color": echo_color},
+
+    {"name": "Jupyter Lab",
+     "url": shh.jupyter_link,
+     "home": shh.jupyter_ip,
+     "desc": "Run Python on the Server",
+     "color": echo_color},
+
     {"name": 'Cosmo The Budget Bot',
      "url": shh.bot_link,
      "home": shh.bot_ip,
@@ -144,12 +176,6 @@ SERVICES = [
      "url": shh.wiki_link,
      "home": shh.wiki_ip,
      "desc": 'Documentation for my Postgres Database',
-     "color": cosmo_color},
-
-    {"name": 'Personal Website',
-     "url": shh.mcor_link,
-     "home": shh.mcor_ip,
-     "desc": 'My personal website, still under construction',
      "color": cosmo_color},
 
     {"name": 'Grocy',
@@ -170,18 +196,65 @@ SERVICES = [
      "desc": 'My Digital Resume - UNDER CONSTRUCTION',
      "color": lomez_color},
 
+    {"name": 'REC TCG',
+     "url": shh.tcg_link,
+     "home": shh.tcg_ip,
+     "desc": 'The Home Page for the REC TCG',
+     "color": lomez_color},
+
+    {"name": 'Personal Website',
+     "url": shh.mcor_link,
+     "home": "TEMP OFFLINE",
+     "desc": 'My personal website, still under construction',
+     "color": lomez_color},
+
     {"name": 'TrueNAS',
      "url": shh.nas_link,
      "home": shh.nas_ip,
      "desc": 'TrueNAS Login',
      "color": yavin_color},
 
-    {"name": 'Plex',
-     "url": shh.plex_link,
-     "home": shh.plex_ip,
-     "desc": 'My collection of Movies and TV Shows',
+    {"name": 'Immich',
+     "url": shh.fam_link,
+     "home": shh.fam_ip,
+     "desc": 'Family Photo Archive',
      "color": yavin_color},
 
+    {"name": 'Radarr',
+     "url": shh.rdr_link,
+     "home": shh.rdr_ip,
+     "desc": 'Movie Library Organization',
+     "color": yavin_color},
+
+    {"name": 'Sonarr',
+     "url": shh.snr_link,
+     "home": shh.snr_ip,
+     "desc": 'TV Show Organization',
+     "color": yavin_color},
+
+    {"name": 'Bazarr',
+     "url": shh.bzr_link,
+     "home": shh.bzr_ip,
+     "desc": 'Subtitle Organizer',
+     "color": yavin_color},
+
+    {"name": 'Prowlarr',
+     "url": shh.prlr_link,
+     "home": shh.prlr_ip,
+     "desc": 'Media Acquision Facilitator',
+     "color": yavin_color},
+
+    {"name": 'qBitTorrent',
+     "url": shh.qbit_link,
+     "home": shh.qbit_ip,
+     "desc": 'Yoho yoho',
+     "color": yavin_color},
+
+    {"name": 'Jellyfin',
+     "url": shh.jelly_link,
+     "home": shh.jelly_ip,
+     "desc": 'Media Streaming',
+     "color": yavin_color}
 ]
 
 @app.route('/')
