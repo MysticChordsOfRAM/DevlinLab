@@ -166,6 +166,12 @@ SERVICES = [
      "desc": "Run Python on the Server",
      "color": echo_color},
 
+    {"name": "Forgejo",
+     "url": shh.git_link,
+     "home": shh.git_ip,
+     "desc": "Self Hosted Git Backups",
+     "color": echo_color},
+
     {"name": 'Cosmo The Budget Bot',
      "url": shh.bot_link,
      "home": shh.bot_ip,
